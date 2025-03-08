@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+client/node_modules/
+server/node_modules/
+server/uploads/
+
+server/.env
+client/.env
+server/config/credentials.json
+# Environment variables
+.envgi
+# Credentials
+**/config/credentials.json
+
+# Build files
+/client/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db

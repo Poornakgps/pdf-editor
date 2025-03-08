@@ -1,0 +1,32 @@
+{
+    "name": "document-editor",
+    "version": "1.0.0",
+    "description": "Document editor application with Google Drive integration",
+    "main": "index.js",
+    "scripts": {
+      "start": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd server && npm start",
+      "client": "cd client && npm start",
+      "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+      "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+      "build": "cd client && npm run build",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "document",
+      "editor",
+      "google",
+      "drive",
+      "react",
+      "node"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "concurrently": "^8.0.1"
+    },
+    "devDependencies": {},
+    "engines": {
+      "node": ">=14.0.0"
+    }
+  }

@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f7fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 20px;
+  }
+  
+  .app-title {
+    font-size: 24px;
+    color: #0366d6;
+  }
+  
+  .auth-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: 500;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #0366d6;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0255b3;
+  }
+  
+  .btn-secondary {
+    background-color: #e1e4e8;
+    color: #24292e;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d1d5da;
+  }
+  
+  .btn-danger {
+    background-color: #d73a49;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #cb2431;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .file-upload-area {
+    border: 2px dashed #e1e4e8;
+    border-radius: 4px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+  }
+  
+  .file-upload-area:hover {
+    border-color: #0366d6;
+  }
+  
+  .document-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .document-card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .document-thumbnail {
+    height: 150px;
+    background-color: #f6f8fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #586069;
+    font-size: 20px;
+  }
+  
+  .document-info {
+    padding: 15px;
+  }
+  
+  .document-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #24292e;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .document-meta {
+    font-size: 12px;
+    color: #586069;
+    margin-bottom: 10px;
+  }
+  
+  .document-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .document-view {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .document-preview {
+    flex: 2;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    min-height: 400px;
+  }
+  
+  .document-actions-panel {
+    flex: 1;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+  }
+  
+  .action-block {
+    margin-bottom: 20px;
+  }
+  
+  .action-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #0366d6;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .login-card {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .login-title {
+    margin-bottom: 20px;
+    color: #24292e;
+  }
+  
+  .login-message {
+    margin-bottom: 30px;
+    color: #586069;
+  }
+  
+  /* Error and success states */
+  .error-message {
+    color: #d73a49;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+  }
